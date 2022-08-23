@@ -1,8 +1,8 @@
 {
-  "name": "hello-world",
+  "name": "follow-mouse",
   "version": "0.0.0",
-  "description": "Hello World plugin description",
-  "repository": "https://github.com/jmerle/inkdrop-hello-world",
+  "description": "Move Inkdrop to the display the mouse is at when opening Inkdrop using a global keybinding",
+  "repository": "https://github.com/jmerle/inkdrop-follow-mouse",
   "license": "MIT",
   "main": "./src/index",
   "scripts": {

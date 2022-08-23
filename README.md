@@ -1,39 +1,25 @@
-# Inkdrop Plugin Template
+# Follow Mouse plugin for Inkdrop
 
-This template repository provides an easy way to start working on a new [Inkdrop](https://inkdrop.app/) plugin with all batteries included.
+[![Build Status](https://github.com/jmerle/inkdrop-follow-mouse/workflows/Build/badge.svg)](https://github.com/jmerle/inkdrop-follow-mouse/actions/workflows/build.yml)
+[![Latest Release](https://inkdrop-plugin-badge.vercel.app/api/version/follow-mouse?style=flat)](https://my.inkdrop.app/plugins/follow-mouse)
+[![Downloads](https://inkdrop-plugin-badge.vercel.app/api/downloads/follow-mouse?style=flat)](https://my.inkdrop.app/plugins/follow-mouse)
 
-See [Auto Reload](https://my.inkdrop.app/plugins/auto-reload) for a plugin based on this template.
-
-## Getting Started
-
-1. Create a new repository by clicking the "Use this template" button. It is recommended to name the repository `inkdrop-hello-world` for a plugin called `hello-world`.
-2. Edit the `README.md`, `LICENSE` and `package.json` files and make sure the data inside them is correct and using your username and repository name.
-3. Remove everything from the next horizontal line and above from this README and start reading the [Contributing Guide](./CONTRIBUTING.md) to learn how to set-up a development environment and how to publish new releases.
-
----
-
-# Hello World plugin for Inkdrop
-
-[![Build Status](https://github.com/jmerle/inkdrop-hello-world/workflows/Build/badge.svg)](https://github.com/jmerle/inkdrop-hello-world/actions/workflows/build.yml)
-[![Latest Release](https://inkdrop-plugin-badge.vercel.app/api/version/hello-world?style=flat)](https://my.inkdrop.app/plugins/hello-world)
-[![Downloads](https://inkdrop-plugin-badge.vercel.app/api/downloads/hello-world?style=flat)](https://my.inkdrop.app/plugins/hello-world)
-
-Short description about the plugin.
+Move Inkdrop to the display the mouse is at when opening Inkdrop using a global keybinding.
 
 ## Install
 
 ```
-ipm install hello-world
+ipm install follow-mouse
 ```
 
 ## Usage
 
-Plugin usage, supported by screenshots where useful.
+Simply install this plugin to make Inkdrop move to the display the mouse is at when Inkdrop is opened using a [global keybinding](https://docs.inkdrop.app/manual/customizing-keybindings#global-keybindings) on the [`application:toggle-main-window`](https://docs.inkdrop.app/manual/list-of-commands#applicationtoggle-main-window) or the [`application:show-and-focus-main-window`](https://docs.inkdrop.app/manual/list-of-commands#applicationshow-and-focus-main-window) command.
 
 ## Changelog
 
-See the [GitHub releases](https://github.com/jmerle/inkdrop-hello-world/releases) for an overview of what changed in each update.
+See the [GitHub Releases](https://github.com/jmerle/inkdrop-follow-mouse/releases) for an overview of what changed in each update.
 
 ## Contributing
 
-All contributions are welcome. Please read the [Contributing Guide](https://github.com/jmerle/inkdrop-hello-world/blob/master/CONTRIBUTING.md) first as it contains information regarding the tools used by the project and instructions on how to set up a development environment.
+All contributions are welcome. Please read the [Contributing Guide](https://github.com/jmerle/inkdrop-follow-mouse/blob/master/CONTRIBUTING.md) first as it contains information regarding the tools used by the project and instructions on how to set up a development environment.
