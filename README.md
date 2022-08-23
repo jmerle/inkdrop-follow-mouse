@@ -14,7 +14,7 @@ ipm install follow-mouse
 
 ## Usage
 
-This plugin automatically moves Inkdrop's main window to the display the mouse is at when Inkdrop is brought into focus using a [global keybinding](https://docs.inkdrop.app/manual/customizing-keybindings#global-keybindings) on the [`application:toggle-main-window`](https://docs.inkdrop.app/manual/list-of-commands#applicationtoggle-main-window) or the [`application:show-and-focus-main-window`](https://docs.inkdrop.app/manual/list-of-commands#applicationshow-and-focus-main-window) command.
+This plugin automatically moves Inkdrop's main window to the display the mouse is at when Inkdrop is brought into focus using a [global keybinding](https://docs.inkdrop.app/manual/customizing-keybindings#global-keybindings) on the [`application:toggle-main-window`](https://docs.inkdrop.app/manual/list-of-commands#applicationtoggle-main-window) or [`application:show-and-focus-main-window`](https://docs.inkdrop.app/manual/list-of-commands#applicationshow-and-focus-main-window) command.
 
 ## Changelog
 
