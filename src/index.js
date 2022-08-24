@@ -21,6 +21,28 @@ function onShow() {
   isHidden = false;
 }
 
+function getNewPosition(currentBounds, currentDisplay, mouseDisplay, axis) {
+  const currentPosition = currentBounds[axis];
+
+  const mouseDisplayStart = mouseDisplay.bounds[axis];
+  const currentDisplayStart = currentDisplay.bounds[axis];
+
+  const workAreaStart = mouseDisplay.workArea[axis];
+  const workAreaSize = mouseDisplay.workArea[axis === 'x' ? 'width' : 'height'];
+
+  const newPosition =
+    mouseDisplayStart + (currentPosition - currentDisplayStart);
+
+  if (
+    newPosition < workAreaStart ||
+    newPosition >= workAreaStart + workAreaSize
+  ) {
+    return workAreaStart;
+  }
+
+  return newPosition;
+}
+
 function onOpenCommand() {
   // This event handler is called after hide/show events
   // Therefore, if isHidden is false, the command is used to focus Inkdrop
@@ -34,15 +56,18 @@ function onOpenCommand() {
   const mouseLocation = remote.screen.getCursorScreenPoint();
   const mouseDisplay = remote.screen.getDisplayNearestPoint(mouseLocation);
 
-  if (currentDisplay.id === mouseDisplay.id) {
+  if (
+    currentDisplay.bounds.x === mouseDisplay.bounds.x &&
+    currentDisplay.bounds.y === mouseDisplay.bounds.y
+  ) {
     return;
   }
 
   const isMaximized = inkdrop.window.isMaximized();
 
   inkdrop.window.setPosition(
-    mouseDisplay.workArea.x + (currentBounds.x - currentDisplay.workArea.x),
-    mouseDisplay.workArea.y + (currentBounds.y - currentDisplay.workArea.y),
+    getNewPosition(currentBounds, currentDisplay, mouseDisplay, 'x'),
+    getNewPosition(currentBounds, currentDisplay, mouseDisplay, 'y'),
   );
 
   if (isMaximized) {
