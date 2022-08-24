@@ -1,6 +1,6 @@
 {
   "name": "follow-mouse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Move Inkdrop to the display the mouse is at when opening Inkdrop using a global keybinding",
   "repository": "https://github.com/jmerle/inkdrop-follow-mouse",
   "license": "MIT",
